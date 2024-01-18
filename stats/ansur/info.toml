@@ -1,0 +1,24 @@
+name    = "Isle of Ansur: Polish"
+credits = "Toma400"
+url     = "linktr.ee/toma400"
+logo    = "ioa_logo.png"
+version = "0.5"
+
+description  = '''
+Translates the game to Polish language. It is official translation, separated from the core game to avoid crunch and make PRs easier.
+Will be merged back into the game later in development.
+
+Be aware that current code system makes this mod incompatibile with any other translation mod.
+There is also no way to properly remove the mod via mod manager. To do it manually, follow those steps:
+- disable the mod in mod manager or remove it from your 'mods' folder
+- in 'core/system_ref.toml' change 'languages' to look like this:
+
+    languages = [
+        "english"
+    ]
+
+Any game that used the mod should be cleaned from mod dependency. Tools for that will come in the future.
+'''
+
+[requirements] # needs to be at the end to not be buggy
+ansur = "0.5"
